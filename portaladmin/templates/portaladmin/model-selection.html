@@ -1,0 +1,53 @@
+{% extends "portaladmin/layout.html" %}
+
+{% block content %}
+    <main role="main" class="container" style="margin-top: 7rem;">
+        <div class="starter-template">
+            <form>
+                <div class="form-group row">
+                    <label for="subId" class="col-sm-2 col-form-label">Model Id</label>
+                    <div class="col-sm-10">
+                        <div class="form-group">
+                            <select class="custom-select" id="subId" required>
+                              <option value="">Select Model Id</option>
+                            </select>
+                            <div class="invalid-feedback">Example invalid custom select feedback</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="subText" class="col-sm-2 col-form-label">Model Text</label>
+                    <div class="col-sm-10">
+                    <input type="text" class="form-control" id="subText" value="Model Description" disabled>
+                    </div>
+                </div>
+                <fieldset class="form-group">
+                    <div class="row">
+                        <legend class="col-form-label col-sm-2 pt-0">Model Selection</legend>
+                        <div class="col-sm-10">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                                <label class="form-check-label" for="gridRadios1">
+                                Monthly Model Run
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                                <label class="form-check-label" for="gridRadios2">
+                                Quaterly Model Run
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+                <div class="form-group row">
+                    <div class="col-sm-10">
+                        <button id="model-run" class="btn btn-primary">Run <i class="fas fa-arrow-right"></i></button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+    {% block extra_js %}
+    {% endblock %}
+{% endblock %}

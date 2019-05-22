@@ -1,0 +1,14 @@
+{% extends "portaladmin/layout.html" %}
+{% load staticfiles%}
+{% block extra_css%}
+{% endblock %}
+{% block extra_js %}
+{% endblock %}
+    <script>
+        $('.carousel').carousel();
+    </script>
+{% block content %}
+<div class="container" style="margin-top:7rem; text-align: center;">
+    <img src="{% static 'portaladmin/images/British-Petroleum.jpg' %}" style="width:80%;">
+</div>
+{% endblock %}

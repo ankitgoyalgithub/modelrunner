@@ -1,0 +1,7 @@
+.env
+.vscode
+*.pyc
+static
+static_collected
+settings.py
+__pycache__
